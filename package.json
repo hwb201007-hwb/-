@@ -1,6 +1,7 @@
 {
   "name": "bear-accounting",
   "version": "1.0.0",
+  "packageManager": "pnpm@10.15.1",
   "description": "小熊记账 - Windows 离线便携式个人记账工具",
   "main": "main.js",
   "scripts": {
@@ -11,11 +12,14 @@
     "electron": "^31.7.7",
     "electron-builder": "^25.1.8"
   },
+  "dependencies": {
+    "mysql2": "^3.11.5"
+  },
   "build": {
     "appId": "com.xiaoxiong.accounting",
     "productName": "小熊记账",
     "directories": { "output": "release" },
-    "files": ["main.js", "preload.js", "index.html", "styles.css", "app.js", "assets/**/*"],
+    "files": ["main.js", "preload.js", "index.html", "styles.css", "styles-game.css", "app.js", "assets/**/*"],
     "portable": { "artifactName": "小熊记账.exe" }
   }
 }

@@ -1,4 +1,6 @@
 node_modules/
 release/
+.cache/
+.build-tools/
 data/*.json
 !data/.gitkeep
